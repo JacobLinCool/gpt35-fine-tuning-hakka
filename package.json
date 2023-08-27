@@ -1,0 +1,27 @@
+{
+	"name": "gpt35-fine-tuning-hakka",
+	"author": "JacobLinCool <jacoblincool@gmail.com> (https://github.com/JacobLinCool)",
+	"version": "0.1.0",
+	"scripts": {
+		"all": "tsx scripts/1-csv2json.ts && tsx scripts/2-upload.ts && tsx scripts/3-tune.ts && tsx scripts/4-result.ts",
+		"csv2json": "tsx scripts/1-csv2json.ts",
+		"upload": "tsx scripts/2-upload.ts",
+		"tune": "tsx scripts/3-tune.ts",
+		"result": "tsx scripts/4-result.ts",
+		"download": "tsx scripts/x-download.ts",
+		"format": "prettier --write ."
+	},
+	"keywords": [],
+	"license": "MIT",
+	"dependencies": {
+		"commander": "^11.0.0",
+		"csv-parse": "^5.4.0",
+		"dotenv": "^16.3.1",
+		"openai": "^4.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.5.3",
+		"prettier": "^3.0.2",
+		"tsx": "^3.12.7"
+	}
+}
